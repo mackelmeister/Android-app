@@ -5,8 +5,66 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="alexsander.com.br.friendsintown.MainActivity">
+    tools:context="alexsander.com.br.friendsintown.MainActivity"
+    android:background="@drawable/home_screen">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/textEmail"
+        android:text="Email"
+        android:layout_above="@+id/textLogin"
+        android:layout_alignLeft="@+id/textLogin"
+        android:layout_alignStart="@+id/textLogin" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/textLogin"
+        android:password="false"
+        android:text="Password"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/buttonLogin"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textLogin"
+        android:layout_alignEnd="@+id/textLogin"
+        android:layout_alignLeft="@+id/textLogin"
+        android:layout_alignStart="@+id/textLogin"
+        android:background="@drawable/button_style"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/buttonCreateAccount"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_alignRight="@+id/buttonLogin"
+        android:layout_alignEnd="@+id/buttonLogin"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignStart="@+id/buttonLogin"
+        android:background="@drawable/button_style" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in with facebook"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_style" />
 </RelativeLayout>
