@@ -1,0 +1,3 @@
+Dont care about me, Im just something that Marcus created to see if he understood the comit and pushing proces of git and github. 
+
+By all means, feel free to delete me!
